@@ -23,7 +23,7 @@ public class ReadQuery
     
     public ReadQuery() {
         
-        Properties props = new Properties(); //MMC
+        Properties props = new Properties(); //MWC
         InputStream instr = getClass().getResourceAsStream("dbConn.properties");
         try {
             props.load(instr);
@@ -55,7 +55,7 @@ public class ReadQuery
     public void doRead()
     {
         try {
-            String query = "Select * from friends";
+            String query = "select * from minecraftservers";
             
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();
