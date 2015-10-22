@@ -39,7 +39,7 @@ public class ReadQuery
         String driver = props.getProperty("driver.name");
         String url = props.getProperty("server.name");
         String username = props.getProperty("user.name");
-        String passwd = props.getProperty("user.passwd");
+        String passwd = props.getProperty("user.password");
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
@@ -78,33 +78,25 @@ public class ReadQuery
                 server.setServerName(this.results.getString("serverName"));
                 server.setServerIP(this.results.getString("serverIP"));
                 server.setServerType(this.results.getString("serverType"));
-                server.setAveragePlayers(this.results.getInt("averagePlaers"));
+                server.setAveragePlayers(this.results.getInt("averagePlayers"));
                 
                 table += "<tr>";
                 table += "<td>";
                 table += server.getServerID();
                 table += "</td>";
-                table += "</tr>";
                 
-                table += "<tr>";
                 table += "<td>";
                 table += server.getServerName();
                 table += "</td>";
-                table += "</tr>";
                 
-                table += "<tr>";
                 table += "<td>";
                 table += server.getServerIP();
                 table += "</td>";
-                table += "</tr>";
-                
-                table += "<tr>";
+
                 table += "<td>";
                 table += server.getAveragePlayers();
                 table += "</td>";
-                table += "</tr>";
-                
-                table += "<tr>";
+
                 table += "<td>";
                 table += server.getServerType();
                 table += "</td>";

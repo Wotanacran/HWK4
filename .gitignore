@@ -1,3 +1,4 @@
 /build/
 dbConn.properties
 
+/dist/
