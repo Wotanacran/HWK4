@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
     
     <% String table = (String) request.getAttribute("table"); %>
@@ -17,5 +18,9 @@
     <body>
         <h1>Minecraft Servers</h1>
         <%= table %>
+        
+        <br><br>
+        
+        <a href ="add">Add A New Server</a>
     </body>
 </html>

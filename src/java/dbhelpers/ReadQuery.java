@@ -68,7 +68,15 @@ public class ReadQuery
     {
         String table = "";
         
-        table += "<table border = 1>";
+        table += "<table>";
+        table += "<tr>";
+        table += "<th>Server ID</th>";
+        table += "<th>Server Name</th>";
+        table += "<th>Server IP</th>";
+        table += "<th>Average Players</th>";
+        table += "<th>Server Type</th>";
+        table += "<th></th>";
+        table += "</tr>";
         
         try {
             while (this.results.next())
@@ -99,6 +107,10 @@ public class ReadQuery
 
                 table += "<td>";
                 table += server.getServerType();
+                table += "</td>";
+                
+                table += "<td id=\"delete\">";
+                table += "<a href=delete?serverID=" + server.getServerID() + "> Delete </a>";
                 table += "</td>";
                 table += "</tr>";
                 
