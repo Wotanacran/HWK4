@@ -10,10 +10,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Minecraft Servers</title>
+        <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
+        <div class="center">
         <h1>Minecraft Servers Database</h1>
         
-        <a href="read">View All Friends</a>
+        <img src="Minecraft.png" alt="Minecraft icon" >
+        
+        <br>
+        
+        <a href="read">View All Servers</a>
+        </div>
     </body>
 </html>

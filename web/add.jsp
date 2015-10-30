@@ -13,34 +13,28 @@
         <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
-        <h1>Add A New Server</h1>
-        <table>
+    <p>
         <form name ="addForm" action ="addServer" method="get">
-            
-            <tr>
-                <td><label>Server Name:</label></td>
-                <td><input type="text" name="name" value="" /></td>
-            </tr>
+            <fieldset>
+                <legend>Add A New Server</legend>
+            <label class="field">Server Name:</label>
+            <input type="text" name="name" value="" />
             <br>
-            <tr>
-                <td><label>Server IP:</label></td>
-                <td><input type="text" name="ip" value="" /></td>
-            </tr>
+            <label class="field">Server IP:</label>
+            <input type="text" name="ip" value="" />
             <br>
-            <tr>
-            <td><label>Average Players:</label></td>
-            <td><input type="text" name="avg" value="" /></td>
-            </tr>
+            <label class="field">Average Players:</label>
+            <input type="text" name="avg" value="" />
             <br>
-            <tr>
-            <td><label>Server Type:</label></td>
-            <td><input type="text" name="type" value="" /></td>
-            </tr>
+            <label class="field">Server Type:</label>
+            <input type="text" name="type" value="" />
             <br>
-            <tr>
-            <td><input type="submit" name="Submit" value="sumbit" /></td>
-            <td><input type="reset" name="Clear" value="clear" /></td>
-            </tr>
+            <div class="center">
+            <input type="submit" name="Submit" value="Submit" />
+            <input type="reset" name="Clear" value="Clear" />
+            </div>
+            </fieldset>
         </form>
+    </p>
     </body>
 </html>
