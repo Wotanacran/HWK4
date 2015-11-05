@@ -83,5 +83,7 @@ input.text{
     text-align: center;
 }
 
+input[readonly] {background-color: gray}
+
 
 
