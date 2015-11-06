@@ -12,15 +12,24 @@
         <title>JSP Page</title>
         <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
-    
-    <% String table = (String) request.getAttribute("table"); %>
-    
+
+    <% String table = (String) request.getAttribute("table");%>
+
     <body>
-        <h1>Minecraft Servers</h1>
-        <%= table %>
-        
-        <br><br>
-        
-        <a href ="add">Add A New Server</a>
+        <div class="wrap"> <!--div to hold other divs-->
+
+            <%@include file="includes/header.jsp" %>  <!-- Header -->
+
+            <%@include file="includes/menu.jsp" %>  <!--Menu-->
+
+            <div class="main">
+                <h1>Minecraft Servers</h1>
+                <%= table%>
+
+
+            </div>
+            <%@include file="includes/footer.jsp" %><!--Footer-->
+
+        </div> <!--close wrap div-->
     </body>
 </html>

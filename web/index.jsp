@@ -13,14 +13,18 @@
         <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
-        <div class="center">
-        <h1>Minecraft Servers Database</h1>
+        <div class="wrap"> <!--div to hold other divs-->
+
+            <%@include file="includes/header.jsp" %>  <!-- Header -->
+
+            <%@include file="includes/menu.jsp" %>  <!--Menu-->
+
+            <div class="main">
+                <h1>Minecraft Servers Database</h1>
         
-        <img src="Minecraft.png" alt="Minecraft icon" >
+            </div>
+        <%@include file="includes/footer.jsp" %><!--Footer-->
         
-        <br>
-        
-        <a href="read">View All Servers</a>
-        </div>
+        </div> <!--close wrap div-->
     </body>
 </html>

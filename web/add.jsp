@@ -1,9 +1,3 @@
-<%-- 
-    Document   : add
-    Created on : Oct 27, 2015, 2:02:28 PM
-    Author     : Tyler
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,28 +7,39 @@
         <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
-    <p>
-        <form name ="addForm" action ="addServer" method="get">
-            <fieldset>
-                <legend>Add A New Server</legend>
-            <label class="field">Server Name:</label>
-            <input type="text" name="name" value="" />
-            <br>
-            <label class="field">Server IP:</label>
-            <input type="text" name="ip" value="" />
-            <br>
-            <label class="field">Average Players:</label>
-            <input type="text" name="avg" value="" />
-            <br>
-            <label class="field">Server Type:</label>
-            <input type="text" name="type" value="" />
-            <br>
-            <div class="center">
-            <input type="submit" name="Submit" value="Submit" />
-            <input type="reset" name="Clear" value="Clear" />
+        <div class="wrap"> <!--div to hold other divs-->
+
+            <%@include file="includes/header.jsp" %>  <!-- Header -->
+
+            <%@include file="includes/menu.jsp" %>  <!--Menu-->
+
+            <div class="main">
+                <p>
+                <form name ="addForm" action ="addServer" method="get">
+                    <fieldset>
+                        <legend>Add A New Server</legend>
+                        <label class="field">Server Name:</label>
+                        <input type="text" name="name" value="" />
+                        <br>
+                        <label class="field">Server IP:</label>
+                        <input type="text" name="ip" value="" />
+                        <br>
+                        <label class="field">Average Players:</label>
+                        <input type="text" name="avg" value="" />
+                        <br>
+                        <label class="field">Server Type:</label>
+                        <input type="text" name="type" value="" />
+                        <br>
+                        <div class="center">
+                            <input type="submit" name="Submit" value="Submit" />
+                            <input type="reset" name="Clear" value="Clear" />
+                        </div>
+                    </fieldset>
+                </form>
+                </p>
             </div>
-            </fieldset>
-        </form>
-    </p>
+            <%@include file="includes/footer.jsp" %><!--Footer-->
+
+        </div> <!--close wrap div-->
     </body>
 </html>
